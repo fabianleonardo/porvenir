@@ -35,7 +35,7 @@ spec:
       annotations:
         cert-manager.io/issuer: ingress-issuer
       hosts: 
-      - name: ai.afpporvenir.com
+      - name: ai-apic.afpporvenir.com
         secretName: analytics-ai-endpoint
     clientSubjectDN: CN=analytics-ingestion-client,O=cert-manager
   mtlsValidateClient: true
