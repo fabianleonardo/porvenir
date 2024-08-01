@@ -28,14 +28,14 @@ spec:
     annotations:
       cert-manager.io/issuer: ingress-issuer
     hosts:
-    - name: rgw.afpporvenir.com
+    - name: rgw-apic.afpporvenir.com
       secretName: gwv6-endpoint
   gatewayManagerEndpoint:
     ingressClassName: nginx
     annotations:
       cert-manager.io/issuer: ingress-issuer
     hosts:
-    - name: rgwd.afpporvenir.com
+    - name: rgwd-apic.afpporvenir.com
       secretName: gwv6-manager-endpoint
   apicGatewayServiceTLS:
     secretName: gateway-service
