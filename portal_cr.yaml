@@ -35,14 +35,14 @@ spec:
     annotations:
       cert-manager.io/issuer: ingress-issuer
     hosts:
-    - name: api.portal.afpporvenir.com
+    - name: api.portal-apic.afpporvenir.com
       secretName: portal-admin
   portalUIEndpoint:
     ingressClassName: nginx
     annotations:
       cert-manager.io/issuer: ingress-issuer
     hosts:
-    - name: portal.afpporvenir.com
+    - name: portal-apic.afpporvenir.com
       secretName: portal-web
   databaseVolumeClaimTemplate:
     storageClassName: managed-csi
