@@ -36,35 +36,35 @@ spec:
     annotations:
       cert-manager.io/issuer: ingress-issuer
     hosts:
-    - name: admin.afpporvenir.com
+    - name: admin-apic.afpporvenir.com
       secretName: cm-endpoint
   apiManagerEndpoint:
     ingressClassName: nginx
     annotations:
       cert-manager.io/issuer: ingress-issuer
     hosts:
-    - name: manager.afpporvenir.com
+    - name: manager-apic.afpporvenir.com
       secretName: apim-endpoint
   consumerCatalogEndpoint:
     ingressClassName: nginx
     annotations:
       cert-manager.io/issuer: ingress-issuer
     hosts:
-    - name: consumer-catalog.afpporvenir.com
+    - name: consumer-catalog-apic.afpporvenir.com
       secretName: consumer-catalog-endpoint
   platformAPIEndpoint:
     ingressClassName: nginx
     annotations:
       cert-manager.io/issuer: ingress-issuer
     hosts:
-    - name: api.afpporvenir.com
+    - name: api-apic.afpporvenir.com
       secretName: api-endpoint
   consumerAPIEndpoint:
     ingressClassName: nginx
     annotations:
       cert-manager.io/issuer: ingress-issuer
     hosts:
-    - name: consumer.afpporvenir.com
+    - name: consumer-apic.afpporvenir.com
       secretName: consumer-endpoint
   databaseVolumeClaimTemplate:
     storageClassName: managed-csi
